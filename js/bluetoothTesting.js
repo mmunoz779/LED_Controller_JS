@@ -1,5 +1,5 @@
 var serialport = require("serialport");
-var $ = require("jQuery");
+var $ = require("jquery");
 var portList;
 var portName;
 let parser;

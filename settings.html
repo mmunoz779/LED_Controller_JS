@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="en">
-
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Favorites.html">Favorites</a></li>
+        <li><a class="active" href="settings.html">Settings</a></li>
+    </ul>
+</nav>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <!--Add Styles-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <style>p.indent{ padding-left: 1.8em }</style>
+    <style>p.indent {
+        padding-left: 1.8em
+    }</style>
     <!--Add Scripts-->
     <script src="js/jquery.js"></script>
     <script src="js/bluetoothTesting.js"></script>
@@ -15,11 +23,12 @@
 
 <body>
 <div>
-    <h1 class="indent">Settings</h1>
-    <h2 class="indent">Port Selection</h2>
-    <label for="portList" class="indent"></label>
-    <select id="portList" required></select>
-    <button id="bluetooth"> Connect to bluetooth</button>
+    <h2 class="indent" style="text-align:center;">Port Selection</h2>
+    <div style="align-items:center;display:flex;justify-content: center;">
+        <label for="portList" class="indent"></label>
+        <select id="portList" required="required"></select>
+        <button id="bluetooth"> Connect to bluetooth</button>
+    </div>
 </div>
 </body>
 </html>

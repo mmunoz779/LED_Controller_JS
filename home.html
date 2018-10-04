@@ -11,20 +11,27 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="container">
-         <!-- preview element -->
-        <div class="preview" ></div>
-        <!-- colorpicker element -->
-        <div class="colorpicker" style="display: none">
-            <canvas id="picker" var="1" width="300" height="300"></canvas>
-            <div class="controls">
-                <div><label>R</label> <label for="rVal"></label><input type="text" id="rVal" /></div>
-                <div><label>G</label> <label for="gVal"></label><input type="text" id="gVal" /></div>
-                <div><label>B</label> <label for="bVal"></label><input type="text" id="bVal" /></div>
-                <div><label>RGB</label> <label for="rgbVal"></label><input type="text" id="rgbVal" /></div>
-                <div><label>HEX</label> <label for="hexVal"></label><input type="text" id="hexVal" /></div>
-            </div>
+<nav>
+    <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="Favorites.html">Favorites</a></li>
+        <li><a href="settings.html">Settings</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <!-- preview element -->
+    <div class="preview"></div>
+    <!-- colorpicker element -->
+    <div class="colorpicker" style="display: none">
+        <canvas id="picker" var="1" width="300" height="300"></canvas>
+        <div class="controls">
+            <div><label>R</label> <label for="rVal"></label><input type="text" id="rVal" content="0"/></div>
+            <div><label>G</label> <label for="gVal"></label><input type="text" id="gVal" content="0"/></div>
+            <div><label>B</label> <label for="bVal"></label><input type="text" id="bVal" content="0"/></div>
+            <div><label>RGB</label> <label for="rgbVal"></label><input type="text" id="rgbVal" content="0,0,0"/></div>
+            <div><label>HEX</label> <label for="hexVal"></label><input type="text" id="hexVal" content="#000000"/></div>
         </div>
     </div>
+</div>
 </body>
 </html>

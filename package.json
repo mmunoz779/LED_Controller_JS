@@ -1,7 +1,14 @@
 {
   "name": "PWA_LED_Controller",
   "version": "1.0.0",
+  "description": "Interfaces with a bluetooth controlled arduino communicating with digital addressable LEDs",
+  "main": "bluetoothTesting.js",
   "dependencies": {
-    "serialport": "^6.0.1"
+    "express": "^4.16.3",
+    "jsdom": "^12.1.0",
+    "node-core-lib": "^0.11.11",
+    "node.js": "0.0.0",
+    "require-all": "^3.0.0",
+    "serialport": "^7.0.2"
   }
 }
