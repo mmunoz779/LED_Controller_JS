@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Controller</title>
+    <!--Add Styles-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!--Add Scripts-->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+         <!-- preview element -->
+        <div class="preview" ></div>
+        <!-- colorpicker element -->
+        <div class="colorpicker" style="display: none">
+            <canvas id="picker" var="1" width="300" height="300"></canvas>
+            <div class="controls">
+                <div><label>R</label> <label for="rVal"></label><input type="text" id="rVal" /></div>
+                <div><label>G</label> <label for="gVal"></label><input type="text" id="gVal" /></div>
+                <div><label>B</label> <label for="bVal"></label><input type="text" id="bVal" /></div>
+                <div><label>RGB</label> <label for="rgbVal"></label><input type="text" id="rgbVal" /></div>
+                <div><label>HEX</label> <label for="hexVal"></label><input type="text" id="hexVal" /></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

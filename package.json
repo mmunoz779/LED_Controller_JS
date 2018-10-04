@@ -1,0 +1,7 @@
+{
+  "name": "PWA_LED_Controller",
+  "version": "1.0.0",
+  "dependencies": {
+    "serialport": "^6.0.1"
+  }
+}
