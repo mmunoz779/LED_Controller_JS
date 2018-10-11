@@ -23,7 +23,7 @@ $(function(){
     }
 
     // select desired colorwheel
-    let imageSrc = 'images/colorwheel3.png';
+    let imageSrc = '../images/colorwheel3.png';
     image.src = imageSrc;
     image.crossOrigin = null;
 

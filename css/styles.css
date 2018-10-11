@@ -55,6 +55,10 @@ li a.active {
     text-align: center;
     color: black;
 }
+li button.preset {
+    background-color: #30add4;
+    padding-top: 20px;
+}
 
 html {
     color: #FFFFFF;

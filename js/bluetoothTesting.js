@@ -36,24 +36,3 @@ myport.on('open', function () {
 );
 
 parser.on('data', console.log);
-
-//----------------------------------------------------------------------------------------------------------------------
-
-    // portName = "COM3";
-    //
-    // serialport.list(function (err, ports) {
-    //     ports.forEach(function(port) {
-    //         console.log(port.comName);
-    //     })
-    // });
-    //
-    // myport = new serialport(portName, {
-    //     baudRate: 9600
-    // });
-    // parser = myport.pipe(new serialport.parsers.Readline({delimiter: '\r\n'}));
-    // myport.on('open', function() {
-    //     console.log("Open connection");
-    // });
-    // myport.on('data', function (event) {
-    //     console.log("Data: " + event)
-    // });

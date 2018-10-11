@@ -1,0 +1,65 @@
+<component name="libraryTable">
+  <library name="application.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/express/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/application.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/request.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/response.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/utils.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/view.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/component.json" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/karma.conf.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/node.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/browser.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/debug.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/inspector-log.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/node.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/ms/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/ms/package.json" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/package.json" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/test.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/package.json" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/express/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/application.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/request.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/response.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/utils.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/view.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/component.json" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/karma.conf.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/node.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/browser.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/debug.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/inspector-log.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/debug/src/node.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/ms/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/ms/package.json" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/package.json" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/safe-buffer/test.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/package.json" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
