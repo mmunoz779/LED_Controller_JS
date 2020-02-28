@@ -1,0 +1,1 @@
+const possibleStates = ['0', '1'];

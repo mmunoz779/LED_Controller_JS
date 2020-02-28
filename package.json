@@ -1,20 +1,29 @@
 {
-  "name": "PWA_LED_Controller",
-  "version": "1.0.0",
-  "description": "Interfaces with a bluetooth controlled arduino communicating with digital addressable LEDs",
-  "main": "bluetoothTesting.js",
+  "name": "led-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "install": "npm install",
+    "fix-sass": "npm rebuild node-sass"
+  },
   "dependencies": {
-    "bluetooth-serial-port": "^2.1.7",
-    "connect": "^3.6.6",
-    "express": "^4.16.3",
-    "fs": "0.0.1-security",
-    "http": "0.0.0",
-    "jsdom": "^12.1.0",
-    "mocha": "^5.2.0",
-    "node-bluetooth": "^1.2.3",
-    "node-core-lib": "^0.11.11",
-    "node.js": "0.0.0",
-    "require-all": "^3.0.0",
-    "serialport": "^7.0.2"
+    "@angular/core": "^9.0.1",
+    "sass": "^1.25.0",
+    "bluetooth-serial-port": "^2.2.7",
+    "bufferutil": "^4.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-gyp": "^6.1.0",
+    "node-gyp-build": "^4.2.0",
+    "node-sass-middleware": "0.11.0",
+    "rxjs": "^6.5.4",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "utf-8-validate": "^5.0.2"
   }
 }

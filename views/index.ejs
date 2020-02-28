@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="ledApp" ng-controller="ledController">
+<h1>LED Controller</h1>
+<div>
+    <br>
+    <button ng-click="send_command('1')" class="on">On</button>
+    <button ng-click="send_command('0')" class="off">Off</button>
+    <br>
+    <label>LED's status: {{led_state === '1' ? 'On' : 'Off'}}</label>
+    <br>
+    <label>Server status: {{server_status}}</label>
+</div>
+</body>
+<script>
+    var app = angular.module('ledApp', []);
+
+    app.controller('ledController', function ($scope, $location, $http) {
+
+        const possibleStates = ['0', '1'];
+
+        $scope.server_status = 'disconnected';
+        $scope.$apply();
+
+        var socket = io($location.search.url);
+        socket.on('connect', function(){
+            console.log('SOCKET: connected to server');
+            $scope.server_status = 'connected';
+            $scope.$apply();
+            socket.on('event', function(data){
+                if (data.hasOwnProperty('ledState')) {
+                    $scope.led_state = data.ledState;
+                    // Update the DOM with new values
+                    $scope.$apply();
+                }
+            });
+            socket.on('disconnect', function(){
+                $scope.server_status = 'disconnected';
+                $scope.$apply();
+                console.log('SOCKET: server disconnected');
+            });
+            socket.on('reconnect', function() {
+                $scope.server_status = 'connected';
+                $scope.$apply();
+                console.log('SOCKET: reconnected to server');
+            });
+            socket.on('reconnect_error', function() {
+                $scope.$apply();
+                console.log('SOCKET: reconnection attempt failed');
+            });
+        });
+
+        $scope.send_command = function (command) {
+            if (!possibleStates.includes(command)) {
+                console.log('Invalid command');
+                return false;
+            }
+            $http.get('/api/console?command=' + command).then(function (res) {
+                if (!res.data.hasOwnProperty('Success')) {
+                    console.log('LED Update failed');
+                }
+            });
+        };
+    });
+</script>
+</html>
