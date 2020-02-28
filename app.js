@@ -12,7 +12,6 @@ app.io = require('socket.io')();
 app.ledSerial = new BTSP.BluetoothSerialPort();
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const apiRouter = require('./routes/api')(app.io, app.ledSerial);
 
 // view engine setup
@@ -32,7 +31,6 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
